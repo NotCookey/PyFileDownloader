@@ -4,7 +4,7 @@
 ## How To Download
 - **Downloading a File**
 ```py
-from FileDownloader import Downloader
+from PyFileDownloader import Downloader
 
 download=Downloader(url="DOWNLOAD LINK")
 
@@ -22,7 +22,7 @@ download.save()
 ## Save A File With A Custom Name
 - **If you would like to download and save a file with a custom name, you can do so with the `.save()` method. It takes a `filename` parameter that is set to `None` by default.**
 ```py
-from FileDownloader import Downloader
+from PyFileDownloader import Downloader
 
 download=Downloader(url="DOWNLOAD LINK")
 download.save(filename="custom_name.extension") 

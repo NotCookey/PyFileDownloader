@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyFileDownloader/PyFileDownloader.py
+PyFileDownloader/__init__.py
+PyFileDownloader.egg-info/PKG-INFO
+PyFileDownloader.egg-info/SOURCES.txt
+PyFileDownloader.egg-info/dependency_links.txt
+PyFileDownloader.egg-info/requires.txt
+PyFileDownloader.egg-info/top_level.txt

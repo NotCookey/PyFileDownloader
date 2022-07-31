@@ -1,6 +1,9 @@
 # PyFileDownloader
 **A Python module to download any file-type from the internet**
 
+## How to install
+> **pip3 install PyFileDownloader**
+
 ## How To Download
 - **Downloading a File**
 ```py

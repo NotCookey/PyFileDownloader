@@ -1,1 +1,1 @@
-from PyFileDownloader.PFileDownloader import Downloader
+from PyFileDownloader.PyFileDownloader import Downloader

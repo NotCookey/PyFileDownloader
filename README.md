@@ -1,4 +1,4 @@
-# FileDownloader
+# PyFileDownloader
 **A Python module to download any file-type from the internet**
 
 ## How To Download

@@ -12,7 +12,7 @@ DESCRIPTION = 'A Python module to download any file-type from the internet.'
 LONG_DESCRIPTION = 'A Python module to download any file-type from the internet.'
 
 setup(
-    name="FileDownloader",
+    name="PyFileDownloader",
     version=VERSION,
     author="NotCookey",
     url='https://github.com/NotCookey/FileDownloader',

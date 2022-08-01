@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PyFileDownloader
-Version: 1.1.0
+Version: 1.2.0
 Summary: A Python module to download any file-type from the internet.
 Home-page: https://github.com/NotCookey/PyFileDownloader
 Author: NotCookey

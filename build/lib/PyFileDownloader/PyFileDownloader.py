@@ -21,24 +21,42 @@ class Downloader:
 
 		filename = response.headers.get("Content-Disposition")
 		filesize = response.headers.get("Content-Length")
-		filetype = response.headers.get("Content-Type").split(";")[0]
+		filetype = response.headers.get("Content-Type")
 
 		if filename:
-			parsed_headers = werkzeug.http.parse_options_header(
-				re.findall("filename=(.+)", filename)[0]
-			)
+			parsed_headers = werkzeug.http.parse_options_header(filename)
 
 			for keys in parsed_headers:
 				if "filename" in keys:
 					filename = keys["filename"]
 			return {"filename": filename, "filesize": filesize, "filetype": filetype}
 		else:
-			if "image" in filetype:
-				return {
-					"filename": "download.jpg",
-					"filesize": filesize,
-					"filetype": filetype,
-				}
+			if filetype:
+				if "image" in filetype:
+					if "jpeg" in filetype:
+						return {
+							"filename": "download.jpg",
+							"filesize": filesize,
+							"filetype": filetype,
+						}
+					if "gif" in filetype:
+						return {
+							"filename": "download.gif",
+							"filesize": filesize,
+							"filetype": filetype,
+						}
+					if "png" in filetype:
+						return {
+							"filename": "download.png",
+							"filesize": filesize,
+							"filetype": filetype,
+						}
+					if "webp" in filetype:
+						return {
+							"filename": "download.webp",
+							"filesize": filesize,
+							"filetype": filetype,
+						}
 			else:
 				return {
 					"filename": "download.html",

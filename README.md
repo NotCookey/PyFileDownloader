@@ -4,7 +4,7 @@
 ## How to install
 > **pip3 install PyFileDownloader**
 
-## How To Download
+## How To Use
 - **Downloading a File**
 ```py
 from PyFileDownloader import Downloader
